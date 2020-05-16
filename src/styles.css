@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+
+.sidebar {   
+    width: 160px;    
+    z-index: 1;
+    top: 0;
+    left: 0;   
+    overflow-x: hidden;
+    padding-top: 16px;  
+    min-height: 500px;
+    background-color: darkgreen;  
+  }
+  
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #212529;
+    display: block;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
