@@ -8,10 +8,12 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { NavComponent } from './components/shared/nav/nav.component';
 import { ShoppingcartComponent } from './components/shoppingcart/shoppingcart.component';
 import { FiltersComponent } from './components/shoppingcart/filters/filters.component';
-import { ProductListComponent } from './components/shoppingcart/product-list/product-list.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
 import { CartComponent } from './components/shoppingcart/cart/cart.component';
 import { CartItemsComponent } from './components/shoppingcart/cart-items/cart-items.component';
-import { ProductItemComponent } from './components/shoppingcart/product-list/product-item/product-item.component';
+import { ProductItemComponent } from './components/product-list/product-item/product-item.component';
+import { LandingpageComponent } from './components/landingpage/landingpage.component';
+import { BannerComponent } from './components/landingpage/banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ProductItemComponent } from './components/shoppingcart/product-list/pro
     ProductListComponent,
     CartComponent,
     CartItemsComponent,
-    ProductItemComponent
+    ProductItemComponent,
+    LandingpageComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
