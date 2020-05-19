@@ -1,0 +1,47 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Acetaminophen",
+      "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+      "price": 100,
+      "imageUrl": "Acetaminophen.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Adderall",
+      "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+      "price": 120,
+      "imageUrl": "Adderall.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Alprazolam",
+      "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+      "price": 140,
+      "imageUrl": "Alprazolam.png"
+    },
+    {
+      "id": 4,
+      "name": "Amitriptyline",
+      "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+      "price": 100,
+      "imageUrl": "Amitriptyline.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Amlodipine",
+      "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+      "price": 100,
+      "imageUrl": "Amlodipine.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Amoxicillin",
+      "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+      "price": 200,
+      "imageUrl": "Amoxicillin.jpg"
+    }
+  ],
+  "cartItems": []
+}

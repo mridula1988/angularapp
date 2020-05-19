@@ -5,13 +5,13 @@
     </div>
  
     <div class="image">
-      <img src="assets/medicine.jpg" alt="" />
+      <img width="200" src="assets/{{ cartItem.imageUrl }}" alt="" />
     </div>
  
     <div class="description">
-      <span>Common Projects</span>
-      <span>Bball High</span>
-      <span>White</span>
+      <span>{{ cartItem.name }}</span>
+      <span>{{ cartItem.name }}</span>
+      <span>{{ cartItem.price | currency : 'INR' }}</span>
     </div>
  
     <div class="quantity">
@@ -22,7 +22,6 @@
       <button class="minus-btn" type="button" name="button">
         <img src="minus.svg" alt="" />
       </button>
-    </div>
- 
-    <div class="total-price">$549</div>
+    </div> 
+    <div class="total-price">{{ cartItem.price * cartItem.quantity | currency : 'INR' }}</div>
   </div>  
