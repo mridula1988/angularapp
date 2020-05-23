@@ -4,7 +4,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="collapse navbar-collapse" id="navbarCollapse" [ngStyle]= "{'min-width':'500px !important'}">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" [routerLink]="['/product-list']">All Medicines <span class="sr-only">(current)</span></a>
@@ -17,24 +17,18 @@
           </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="#">Ayurveda Products</a>
-        </li>
-        <li class="nav-item">
-           &nbsp;
-        </li>              
+        </li>                   
       </ul>      
+    </div>
+    <div class="navbar navbar-expand-md navbar-light search-box">      
+      <input class="form-control mr-sm-2" type="text" [(ngModel)]= "searchValue" placeholder="Search for products" aria-label="Search" (change) = "SearchProducts()">
     </div>
     <div style="float: left;"><button class="btn btn-outline-warning my-2 my-sm-0" type="button">Sign In</button></div>    
     <div>      
         <a [routerLink]="['/cart']"><img width="40" alt="checkout" src="assets/cart.png" /></a>      
         <span class='badge badge-warning' id='lblCartCount'> {{ cartCount }} </span>
       </div>
-  </nav>
-  <div class="navbar navbar-expand-md navbar-light bg-light mb-4">
-    <form class="form-inline mt-2 mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-</div>  
+  </nav>   
 </div>
   <style type="text/css">
     .menu-container {

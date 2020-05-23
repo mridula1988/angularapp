@@ -15,6 +15,7 @@ import { CartItemsComponent } from './components/shoppingcart/cart-items/cart-it
 import { ProductItemComponent } from './components/product-list/product-item/product-item.component';
 import { LandingpageComponent } from './components/landingpage/landingpage.component';
 import { BannerComponent } from './components/landingpage/banner/banner.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,10 @@ import { BannerComponent } from './components/landingpage/banner/banner.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

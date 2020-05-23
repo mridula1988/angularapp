@@ -10,18 +10,18 @@
  
     <div class="description">
       <span>{{ cartItem.name }}</span>
-      <span>{{ cartItem.name }}</span>
+      <span>{{ cartItem.desciption }}</span>
       <span>{{ cartItem.price | currency : 'INR' }}</span>
     </div>
  
     <div class="quantity">
       <button class="plus-btn" type="button" name="button">
-        <img src="plus.svg" alt="" />
+        <img src="assets/plus.jpg" height="20" width="20" alt="add" />
       </button>
-      <input type="text" name="name" value="1">
+      <input type="text" name="name" value="{{ cartItem.qty }}">
       <button class="minus-btn" type="button" name="button">
-        <img src="minus.svg" alt="" />
+        <img src="assets/minus.jpg" alt="substract" height="18" width="18"  />
       </button>
     </div> 
-    <div class="total-price">{{ cartItem.price * cartItem.quantity | currency : 'INR' }}</div>
+    <div class="total-price">Tot{{ cartItem.price * cartItem.qty | currency : 'INR' }}</div>
   </div>  

@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { Product } from '../models/product';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { productUrl } from 'src/app/config/api';
 
-const productUrl = 'http://localhost:3000/products';
 @Injectable({
   providedIn: 'root'
 })

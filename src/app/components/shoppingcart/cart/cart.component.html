@@ -1,7 +1,9 @@
-<div *ngIf="cartItems.length === 0" class="alert alert-info">Your cart is empty!!</div>
+<div *ngIf="cartItems.length === 0" class="alert alert-info empty-cart-message">
+    Hey! It feels so light!!!   <br>
+    There is nothing in your cart. Let's add some items.</div>
 <ul *ngIf="cartItems.length > 0" class="list-group">
     <li class="list-group-item" *ngFor="let item of cartItems">
         <app-cart-items [cartItem]="item"></app-cart-items>
     </li>
 </ul>
-<div class="alert alert-success">{{ cartTotal }}</div>
+<div *ngIf="cartItems.length > 0" class="alert alert-success">Cart Total: {{ cartTotal }}</div>
