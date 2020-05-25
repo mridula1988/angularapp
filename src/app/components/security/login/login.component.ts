@@ -5,8 +5,6 @@ import { CustomValidators } from 'src/app/validators/custom-validators';
 import { AuthServiceService } from 'src/app/services/auth-service.service';
 import { Router } from '@angular/router';
 
-
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -23,7 +21,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     this.loginForm = this.fb.group({
       username: ['', [Validators.required]],
-      password: ['', Validators.compose([Validators.required, CustomValidators.passwordValidator])]
+      password: ['', [CustomValidators.passwordValidator]]
     })
   }
   // convenience getter for easy access to form fields
