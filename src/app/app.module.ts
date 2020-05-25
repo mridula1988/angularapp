@@ -15,7 +15,8 @@ import { CartItemsComponent } from './components/shoppingcart/cart-items/cart-it
 import { ProductItemComponent } from './components/product-list/product-item/product-item.component';
 import { LandingpageComponent } from './components/landingpage/landingpage.component';
 import { BannerComponent } from './components/landingpage/banner/banner.component';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { LoginComponent } from './components/security/login/login.component';
 
 @NgModule({
   declarations: [
@@ -30,15 +31,15 @@ import { FormsModule } from '@angular/forms';
     CartItemsComponent,
     ProductItemComponent,
     LandingpageComponent,
-    BannerComponent
+    BannerComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
     FormsModule
-    
-
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -43,5 +43,43 @@
       "imageUrl": "Amoxicillin.jpg"
     }
   ],
-  "cartItems": [  ]
+  "cartItems": [],
+  "user": [
+    {
+      "id": 1,
+      "first_name": "Mridula",
+      "last_name": "Singh",
+      "email_address": "mrdlsngh@gmail.com",
+      "phone_number": "8527055952",
+      "is_active": 1,
+      "deleted": 0,
+      "created_on": "2020-01-01",
+      "username": "msingh",
+      "password": "Ashish@1992"
+    },
+    {
+      "username": "msingh",
+      "id": 2
+    },
+    {
+      "username": "msingh",
+      "id": 3
+    },
+    {
+      "username": "msingh",
+      "id": 4
+    },
+    {
+      "username": "msingh",
+      "id": 5
+    },
+    {
+      "username": "msingh",
+      "id": 6
+    },
+    {
+      "username": "msingh",
+      "id": 7
+    }
+  ]
 }

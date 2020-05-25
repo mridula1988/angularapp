@@ -1,0 +1,40 @@
+<div class="container">
+    <!-- row -->
+    <div class="row">
+        <form class="clearfix" [formGroup]="loginForm" (ngSubmit)="submitLoginForm()">
+            <div class="col-md-16">
+                <div class="billing-details">                   
+                    <div class="section-title">
+                        <h3 class="title">Login</h3>
+                    </div>
+                    <div class="form-group" [formGroup]="loginForm">
+                        <input type="text" placeholder="Username" formControlName="username">
+                        <div class="errors" *ngIf="form.username.errors && isFormSubmitted">
+                            <div *ngIf="form.username.errors && isFormSubmitted">
+                              Username is required
+                            </div>                            
+                        </div>                   
+                    </div>
+                    <div class="form-group" [formGroup]="loginForm">
+                        <input type="password" placeholder="Password" formControlName="password">
+                        <div class="errors" *ngIf="form.password.errors && isFormSubmitted">
+                            <div *ngIf="form.password.errors && isFormSubmitted">
+                              Password is required
+                            </div>
+                            <div class="error-text" *ngIf="form.password.errors">
+                             {{form.password.errors.password}}
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="shopping-cart-btns">                        
+                        <button class="primary-btn" type="submit">Login <i class="fa fa-arrow-circle-right"></i></button>
+                        
+                        <button class="main-btn">Reset</button>
+                    </div>                   
+                </div>
+            </div>
+            
+        </form>
+    </div>
+    <!-- /row -->
+</div>

@@ -23,7 +23,7 @@
     <div class="navbar navbar-expand-md navbar-light search-box">      
       <input class="form-control mr-sm-2" type="text"  placeholder="Search for products" aria-label="Search" (change) = "SearchProducts()">
     </div>
-    <div style="float: left;"><button class="btn btn-outline-warning my-2 my-sm-0" type="button">Sign In</button></div>    
+    <div style="float: left;"><a [routerLink]="['/login']" class="btn btn-outline-warning my-2 my-sm-0">Sign In</a></div>    
     <div>      
         <a [routerLink]="['/cart']"><img width="40" alt="checkout" src="assets/cart.png" /></a>      
         <span class='badge badge-warning' id='lblCartCount'> {{ cartCount }} </span>
