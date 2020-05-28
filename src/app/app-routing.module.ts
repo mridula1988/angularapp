@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: '', component: LandingpageComponent }, 
   { path: 'landingpage',  component: LandingpageComponent },
   { path: 'cart',  component: CartComponent },
-  { path: 'product-list',  component: ProductListComponent },
+  { path: 'product-list/:id',  component: ProductListComponent },
   { path: 'login',  component: LoginComponent },
 ];
 

@@ -2,6 +2,7 @@
   "products": [
     {
       "id": 1,
+      "categoryId": "1",
       "name": "Acetaminophen",
       "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
       "price": 100,
@@ -9,6 +10,7 @@
     },
     {
       "id": 2,
+      "categoryId": "1",
       "name": "Adderall",
       "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
       "price": 120,
@@ -16,6 +18,7 @@
     },
     {
       "id": 3,
+      "categoryId": "1",
       "name": "Alprazolam",
       "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
       "price": 140,
@@ -23,6 +26,7 @@
     },
     {
       "id": 4,
+      "categoryId": "2",
       "name": "Amitriptyline",
       "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
       "price": 100,
@@ -30,6 +34,7 @@
     },
     {
       "id": 5,
+      "categoryId": "2",
       "name": "Amlodipine",
       "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
       "price": 100,
@@ -37,13 +42,241 @@
     },
     {
       "id": 6,
+      "categoryId": "2",
       "name": "Amoxicillin",
       "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
       "price": 200,
       "imageUrl": "Amoxicillin.jpg"
+    },
+    {
+      "id": 7,
+      "categoryId": "3",
+      "name": "Face Mask",
+      "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+      "price": 100,
+      "imageUrl": "facemask.jpg"
+    }, {
+      "id": 8,
+      "categoryId": "3",
+      "name": "Sanitizer",
+      "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+      "price": 120,
+      "imageUrl": "sanitizer.jpg"
+    },
+    {
+      "id": 9,
+      "categoryId": "3",
+      "name": "Dettol",
+      "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+      "price": 50,
+      "imageUrl": "dettol.jpg"
     }
   ],
-  "cartItems": [],
+  "cartItems": [
+    {
+      "product": {
+        "id": 2,
+        "name": "Adderall",
+        "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+        "price": 120,
+        "imageUrl": "Adderall.jpg"
+      },
+      "id": 1
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Alprazolam",
+        "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+        "price": 140,
+        "imageUrl": "Alprazolam.png"
+      },
+      "id": 2
+    },
+    {
+      "product": {
+        "id": 1,
+        "name": "Acetaminophen",
+        "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+        "price": 100,
+        "imageUrl": "Acetaminophen.jpg"
+      },
+      "id": 3
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Alprazolam",
+        "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+        "price": 140,
+        "imageUrl": "Alprazolam.png"
+      },
+      "id": 4
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Adderall",
+        "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+        "price": 120,
+        "imageUrl": "Adderall.jpg"
+      },
+      "id": 5
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Adderall",
+        "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+        "price": 120,
+        "imageUrl": "Adderall.jpg"
+      },
+      "id": 6
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Alprazolam",
+        "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+        "price": 140,
+        "imageUrl": "Alprazolam.png"
+      },
+      "id": 7
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Alprazolam",
+        "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+        "price": 140,
+        "imageUrl": "Alprazolam.png"
+      },
+      "id": 8
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Adderall",
+        "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+        "price": 120,
+        "imageUrl": "Adderall.jpg"
+      },
+      "id": 9
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Alprazolam",
+        "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+        "price": 140,
+        "imageUrl": "Alprazolam.png"
+      },
+      "id": 10
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Alprazolam",
+        "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+        "price": 140,
+        "imageUrl": "Alprazolam.png"
+      },
+      "id": 11
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Alprazolam",
+        "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+        "price": 140,
+        "imageUrl": "Alprazolam.png"
+      },
+      "id": 12
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Alprazolam",
+        "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+        "price": 140,
+        "imageUrl": "Alprazolam.png"
+      },
+      "id": 13
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Alprazolam",
+        "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+        "price": 140,
+        "imageUrl": "Alprazolam.png"
+      },
+      "id": 14
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Adderall",
+        "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+        "price": 120,
+        "imageUrl": "Adderall.jpg"
+      },
+      "id": 15
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Adderall",
+        "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+        "price": 120,
+        "imageUrl": "Adderall.jpg"
+      },
+      "id": 16
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Adderall",
+        "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+        "price": 120,
+        "imageUrl": "Adderall.jpg"
+      },
+      "id": 17
+    },
+    {
+      "product": {
+        "id": 3,
+        "categoryId": "1",
+        "name": "Alprazolam",
+        "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+        "price": 140,
+        "imageUrl": "Alprazolam.png"
+      },
+      "id": 18
+    },
+    {
+      "product": {
+        "id": 3,
+        "categoryId": "1",
+        "name": "Alprazolam",
+        "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+        "price": 140,
+        "imageUrl": "Alprazolam.png"
+      },
+      "id": 19
+    },
+    {
+      "product": {
+        "id": 1,
+        "categoryId": "1",
+        "name": "Acetaminophen",
+        "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists. It covers diagnosis, treatment, and prevention of disease, medical research, and many other aspects of health.",
+        "price": 100,
+        "imageUrl": "Acetaminophen.jpg"
+      },
+      "id": 20
+    }
+  ],
   "user": [
     {
       "id": 1,
@@ -60,38 +293,23 @@
     {
       "username": "msingh",
       "id": 2
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Personal Care",
+      "deleted": 0
     },
     {
-      "username": "msingh",
-      "id": 3
+      "id": "2",
+      "name": "Ayurveda Products",
+      "deleted": 0
     },
     {
-      "username": "msingh",
-      "id": 4
-    },
-    {
-      "username": "msingh",
-      "id": 5
-    },
-    {
-      "username": "msingh",
-      "id": 6
-    },
-    {
-      "username": "msingh",
-      "id": 7
-    },
-    {
-      "username": "msigh",
-      "id": 8
-    },
-    {
-      "username": "msingh",
-      "id": 9
-    },
-    {
-      "username": "msingh",
-      "id": 10
+      "id": "3",
+      "name": "Corona virus Prevention",
+      "deleted": 0
     }
   ]
 }

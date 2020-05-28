@@ -10,3 +10,7 @@
 #navbarCollapse { 
     min-width: 300px !important;
 }
+.user-bar {
+    color: white;
+    font-style: italic;
+}

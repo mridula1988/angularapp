@@ -1,29 +1,24 @@
 <div class="menu-container">
 <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-    <app-header></app-header>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse" [ngStyle]= "{'min-width':'500px !important'}">
+    <app-header></app-header> 
+    
+    <div class="collapse navbar-collapse" id="navbarCollapse" [ngStyle]= "{'min-width':'500px !important', 'float' : 'left'}">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" [routerLink]="['/product-list']">All Medicines <span class="sr-only">(current)</span></a>
+          <a class="nav-link" [routerLink]="['/product-list','all']">All Medicines <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Coronavirus Prevention</a>
+
+        <li class="nav-item" *ngFor="let category of categories">
+          <a class="nav-link" [routerLink]="['/product-list', category.id]">{{ category.name  }}</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Personal Care</a>
-          </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Ayurveda Products</a>
-        </li>                   
       </ul>      
     </div>
     <div class="navbar navbar-expand-md navbar-light search-box">      
       <input class="form-control mr-sm-2" type="text"  placeholder="Search for products" aria-label="Search" (change) = "SearchProducts()">
     </div>
-    <div style="float: left;"><a [routerLink]="['/login']" class="btn btn-outline-warning my-2 my-sm-0">Sign In</a></div>    
+    <div class="user-bar" *ngIf="isUserLoggedIn">Hi {{ userName }}</div>
+    <div *ngIf="!isUserLoggedIn" style="float: left;"><a [routerLink]="['/login']" class="btn btn-outline-warning my-2 my-sm-0">
+      Sign In</a></div>    
     <div>      
         <a [routerLink]="['/cart']"><img width="40" alt="checkout" src="assets/cart.png" /></a>      
         <span class='badge badge-warning' id='lblCartCount'> {{ cartCount }} </span>

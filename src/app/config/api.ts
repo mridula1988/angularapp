@@ -4,3 +4,4 @@ export const baseUrl = environment.production? 'http://mycart.com/' : 'http://lo
 export const productUrl = baseUrl + '/products';
 export const cartUrl = baseUrl + '/cartItems';
 export const loginUrl = baseUrl + '/user';
+export const categoriesUrl = baseUrl + '/categories';

@@ -15,7 +15,7 @@ export class CartItemService {
 
   constructor(private http: HttpClient) { }
 
-  addProductToCart(product: Product): Observable<any>{
+  addProductToCart(product: Product): Observable<any>{    
     return this.http.post(cartUrl, { product });
   }
 
@@ -29,9 +29,7 @@ export class CartItemService {
             if (item.product.id == cartItems[i].productId) {
               console.log("found")
               cartItems[i].qty++;
-              doesProductExists = true;   
-              console.log(cartItems[i]);   
-              break;    
+              doesProductExists = true;             
             }          
           }  
           if(!doesProductExists) { 

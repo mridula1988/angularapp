@@ -1,7 +1,9 @@
 export class Categories {
     id: number;
     name: string;
-    description: string;
-    parentId : number;
-    imageUrl: string;
+    constructor(id, name) {
+        this.id;
+        this.name = name;
+    }
+
 }

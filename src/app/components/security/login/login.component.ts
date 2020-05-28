@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, FormControl, Validators, FormsModule, ReactiveF
 import { CustomValidators } from 'src/app/validators/custom-validators';
 import { AuthServiceService } from 'src/app/services/auth-service.service';
 import { Router } from '@angular/router';
+import { localStorageService } from 'src/app/components/localstorage/localstorage';
 
 @Component({
   selector: 'app-login',
@@ -15,7 +16,13 @@ export class LoginComponent implements OnInit {
   username: string;
   password: string;
   isFormSubmitted = false;
-  constructor(private fb: FormBuilder, private authService: AuthServiceService, private router: Router) {  
+  invalidLogin = false;
+  invalidLoginErrorMessage:string = '';
+
+  constructor(private fb: FormBuilder,
+      private authService: AuthServiceService,
+      private router: Router,
+      private localStorageService: localStorageService) {  
        
   } 
   ngOnInit(): void {
@@ -39,22 +46,18 @@ export class LoginComponent implements OnInit {
       this.loginForm.controls.username.value,
       this.loginForm.controls.password.value) 
       .subscribe(
-        data => {         
-       //   this.submitted = false;
-        //  this.localstorageService.SetAuthorizationData(JSON.stringify(data));
-         // this.invalidLogin = false;
-        //  this.blockUI.stop();
-          this.router.navigate(['landingpage']);
+        data => {            
+            this.localStorageService.saveUserData(JSON.stringify(data));           
+            this.router.navigate(['landingpage']);        
         },
         error => {
-        //  this.submitted = false;
-        //  console.log(error);
-        //  this.displayError = error.message;
-         // if (this.displayError == undefined || this.displayError == null) {
-       //     this.displayError = "Username or Password Invalid";
-        //  }
-       //   this.invalidLogin = true;
-       //   this.blockUI.stop();
+          this.isFormSubmitted = false;      
+          this.invalidLoginErrorMessage = error.message;
+          if (this.invalidLoginErrorMessage == undefined || this.invalidLoginErrorMessage == null) {
+            this.invalidLoginErrorMessage = "Username or Password Invalid";
+          }
+          this.invalidLogin = true;
+          //   this.blockUI.stop();
         });
   }
   setUserSession(result) {
